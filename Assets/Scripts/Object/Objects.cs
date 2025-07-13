@@ -130,6 +130,12 @@ public class PlayerObject : ScriptableObject
     public bool isSnake;
     public bool isBee;
     public bool isBacteria;
+
+    //Scripts
+    public PlayerMovement playerMovement;
+    public PlayerInventory playerInventory;
+    public PlayerCommunication playerCommunication;
+
 }
 
 public class Investment : ScriptableObject {

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Player1
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerObject
+  title: Johnny Bee
+  order: 1
+  description: wee little fella
+  image: {fileID: 21300000, guid: 8004118ba4145a74e823fedaa37acf3a, type: 3}
+  age: 54
+  isMale: 1
+  isEmployed: 0
+  salary: 0
+  careers: []
+  spouses: []
+  babies: []
+  houses: []
+  carCount: 0
+  actionCards: []
+  money: 0
+  debt: 0
+  investments: []
+  diceRolls: 
+  rollNumber: 0
+  speedModifier: 0
+  isMarried: 0
+  isRetired: 0
+  isDead: 0
+  isJailed: 0
+  isQuarantined: 0
+  isSnake: 0
+  isBee: 0
+  isBacteria: 0
+  playerMovement: {fileID: 0}
+  playerInventory: {fileID: 0}
+  playerCommunication: {fileID: 0}

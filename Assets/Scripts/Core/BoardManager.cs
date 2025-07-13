@@ -16,7 +16,16 @@ public class BoardManager : MonoBehaviour
     [Header("Path Visualization")]
     [SerializeField] private bool showPathGizmo = true;
     [SerializeField] private Color pathColor = Color.green;
-    
+
+    // public void Update()
+    // {
+    //     // Only get tile position when mouse is clicked
+    //     if (Mouse.current.leftButton.wasPressedThisFrame)
+    //     {
+    //         GetTilePositionFromMouse();
+    //     }
+    // }
+
     // Public getter to access path positions from other scripts
     public List<Vector3> GetPathPositions()
     {

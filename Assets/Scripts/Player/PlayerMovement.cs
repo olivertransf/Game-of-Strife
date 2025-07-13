@@ -214,7 +214,7 @@ public class PlayerMovement : MonoBehaviour
         }
         
         float journey = 0f;
-        float speed = totalDistance / (maxSpaces * (1f / moveSpeed)); // Adjust speed based on total distance
+        float speed = totalDistance / (maxSpaces * (1f / moveSpeed)); 
         
         while (journey <= 1f)
         {
@@ -355,13 +355,6 @@ public class PlayerMovement : MonoBehaviour
         {
             string tileName = tile.name;
             Debug.Log($"Player landed on tile: {tileName}");
-            
-            // Extract color from tile name (assuming format like "BLUE", "RED", etc.)
-            string color = ExtractColorFromTileName(tileName);
-            if (!string.IsNullOrEmpty(color))
-            {
-                Debug.Log($"Player landed on {color} space!");
-            }
         }
         else
         {
@@ -369,24 +362,4 @@ public class PlayerMovement : MonoBehaviour
         }
     }
     
-    /// <summary>
-    /// Extract color from tile name
-    /// </summary>
-    private string ExtractColorFromTileName(string tileName)
-    {
-        if (string.IsNullOrEmpty(tileName)) return "";
-        
-        // Common color names to look for
-        string[] colors = { "BLUE", "RED", "GREEN", "YELLOW", "PURPLE", "ORANGE", "PINK", "BROWN", "BLACK", "WHITE", "GRAY", "GREY" };
-        
-        foreach (string color in colors)
-        {
-            if (tileName.ToUpper().Contains(color))
-            {
-                return color;
-            }
-        }
-        
-        return "";
-    }
 }
